@@ -3,7 +3,7 @@
 </h3>
 
 <p align="center">
-Aplicação para armazenar projetos e suas tarefas do zero utilizando Express.
+Aplicação para armazenar projetos e suas tarefas utilizando Express.
 </p>
 
 # Rotas
