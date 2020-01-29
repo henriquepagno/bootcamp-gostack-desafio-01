@@ -3,10 +3,10 @@ const routes = require('./routes');
 
 const server = express();
 
-//Indica para o express que o body das requisições utilizará JSON
+//Sets express to use JSON on requests body
 server.use(express.json());
 
 server.use(routes);
 
-//Define a porta da aplicação
+//Define application port
 server.listen(3333);
