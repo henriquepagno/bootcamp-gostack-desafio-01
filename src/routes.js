@@ -19,7 +19,9 @@ function projectExists(req, res, next) {
 
 function countRequests(req, res, next) {
   cont++;
-  console.log(`${cont} ${cont === 1 ? "request" : "requests"} made to the server.`);
+  console.log(
+    `${cont} ${cont === 1 ? "request" : "requests"} made to the server.`
+  );
   next();
 }
 
@@ -74,7 +76,7 @@ routes.post("/projects/:id/tasks", projectExists, (req, res) => {
       responseProject = project;
     }
   });
-  
+
   return res.json(responseProject);
 });
 
